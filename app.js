@@ -48,7 +48,7 @@ app.get('/products-list', function(req, res) {
 
 
 // 可以将一类的路由单独保存在一个文件中
-app.use('/todos', require('./routes/todos'));
+app.use('/todos', require('./public/routes/todos'));
 // app.use('/sign', require('./views/signup.ejs'));
 
 
