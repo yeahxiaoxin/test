@@ -35,7 +35,9 @@ app.use(cookieParser());
 app.get('/', function(req, res) {
   res.render('login', { currentTime: new Date() });
 });
-
+app.get('/signup', function(req, res) {
+    res.render('signup', { currentTime: new Date() });
+});
 
 // 可以将一类的路由单独保存在一个文件中
 app.use('/todos', require('./routes/todos'));
