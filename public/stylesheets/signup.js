@@ -10,7 +10,7 @@ function signup() {
   user.setPassword(password);
   user.setEmail(email);
   user.signUp().then(function (loginedUser) {
-    window.location.href = "../../views/products-list.ejsbei";
+    window.location.href = "../../views/products-list.ejs";
   }, (function (error) {
   	alert(JSON.stringify(error));
   }));

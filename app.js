@@ -38,6 +38,14 @@ app.get('/', function(req, res) {
 app.get('/signup', function(req, res) {
     res.render('signup', { currentTime: new Date() });
 });
+app.get('/new-product', function(req, res) {
+    res.render('new-product', { currentTime: new Date() });
+});
+app.get('/products-list', function(req, res) {
+    res.render('products-list', { currentTime: new Date() });
+});
+
+
 
 // 可以将一类的路由单独保存在一个文件中
 app.use('/todos', require('./routes/todos'));

@@ -24,7 +24,7 @@ function releaseNewProduct() {
   product.set('owner', AV.User.current());
   product.set('image', avFile);
   product.save().then(function() {
-    window.location.href = "../../views/products-list.ejsbei";
+    window.location.href = "../../views/products-list.ejs";
   }, function(error) {
     alert(JSON.stringify(error));
   });
