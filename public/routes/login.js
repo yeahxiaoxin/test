@@ -5,7 +5,7 @@ function login() {
   // LeanCloud - 登录
   // https://leancloud.cn/docs/leanstorage_guide-js.html#用户名和密码登录
   AV.User.logIn(username, password).then(function (loginedUser) {
-    window.location.href = "http://easybill.leanapp.cn/todos";
+    window.location.href = "http://easybill.leanapp.cn/products-list";
   }, function (error) {
     alert(JSON.stringify(error));
   });
