@@ -11,9 +11,9 @@ function login() {
   });
 };
 
-$(function() {
-  $(".form-signin").on('submit', function(e) {
-    e.preventDefault();
-    login();
-  });
-});
+// $(function() {
+//   $(".form-signin").on('submit', function(e) {
+//     e.preventDefault();
+//     login();
+//   });
+// });
