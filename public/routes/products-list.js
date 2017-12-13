@@ -46,13 +46,13 @@ function setupData() {
 
 function logout() {
   AV.User.logOut();
-  window.location.href = "../../views/login.ejs";
+  window.location.href = "http://easybill.leanapp.cn/login.ejs";
 };
 
 $(function() {
   if (isCurrentUser()) {
     setupData();
   } else {
-    window.location.href = "../../views/login.ejs";
+    window.location.href = "http://easybill.leanapp.cn/login.ejs";
   }
 });
