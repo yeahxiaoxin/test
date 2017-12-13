@@ -24,7 +24,7 @@ function releaseNewProduct() {
   product.set('owner', AV.User.current());
   product.set('image', avFile);
   product.save().then(function() {
-    window.location.href = "../../views/products-list.ejs";
+    window.location.href = "http://easybill.leanapp.cn/products-list.ejs";
   }, function(error) {
     alert(JSON.stringify(error));
   });
@@ -37,6 +37,6 @@ $(function() {
       releaseNewProduct();
     });
   } else {
-    window.location.href = "../../views/login.ejs";
+    window.location.href = "http://easybill.leanapp.cn/login.ejs";
   }
 });
